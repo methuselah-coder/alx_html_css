@@ -1,0 +1,101 @@
+/* Variables */
+:root {
+    --primary-color: #FF6565;
+    --text-color: #ffffff;
+    --background-color: #111;
+    --button-hover-opacity: 0.9;
+    --section-bg: #f4f4f4;
+    --input-bg: #fff;
+    --input-border: #ccc;
+}
+
+/* Contact Section */
+.contact {
+    background: var(--section-bg);
+    padding: 50px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    background: var(--input-bg);
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+button {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: var(--button-hover-opacity);
+}
+
+/* Animations */
+input,
+textarea {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+    }
+}
