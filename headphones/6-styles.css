@@ -1,0 +1,75 @@
+/* Variables */
+:root {
+    --primary-color: #FF6565;
+    --text-color: #ffffff;
+    --section-bg: #f4f4f4;
+}
+
+/* Our Results Section */
+.our-results {
+    background: var(--section-bg);
+    padding: 50px;
+    text-align: center;
+}
+
+.our-results h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.results-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Pentagon Shape */
+.pentagon {
+    width: 0;
+    border-style: solid;
+    border-width: 60px 35px 0 35px;
+    border-color: var(--primary-color) transparent transparent transparent;
+    position: relative;
+}
+
+.pentagon::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: -35px;
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    transform: rotate(45deg);
+}
+
+/* Result Item */
+.result-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.result-item h3 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+.result-item p {
+    font-size: 1.2rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .results-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result-item {
+        width: 90%;
+    }
+}
