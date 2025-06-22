@@ -13,7 +13,7 @@ This project is part of the **ALX HTML & CSS curriculum**. It focuses on applyin
 
 Here’s a visual preview of the final design:
 
-![Homepage Preview](images/preview.png)
+![Homepage Preview]("C:\Users\hp\Pictures\Screenshot 2025-01-17 215949.png")
 
 > _Note: Replace `preview.png` with an actual screenshot of your final page._
 
